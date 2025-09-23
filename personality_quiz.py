@@ -121,7 +121,7 @@ elif answer == "B":
     redstoner_points += 1
 elif answer == "C":
     PVPer_points += 1
-elif answer == ".":
+elif answer == "." or "1":
     Erebos += 1
     print("Erebos Loading...")
 else:
