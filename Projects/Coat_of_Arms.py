@@ -52,20 +52,34 @@ window.tracer(0)
 ######################################################################
 # https://en.wikipedia.org/wiki/Web_colors#Extended_colors
 # Section 2 - Your code
-set_background("castle_ruins_black")
+set_background("spring")
+
+# My squares for the crest -----
 
 draw_rectangle("grey", 100, 100, 200, 200)
 draw_rectangle("green", -100, 100, 200, 200)
 draw_rectangle("green", 100, -100, 200, 200)
 draw_rectangle("grey", -100, -100, 200, 200)
-s1 = create_sprite("rocket", 100, 100)
-s2 = create_sprite("raven", -100, -100)
 
-message1 = create_sprite("alien",-200,200)
-message1.color("red")
+# My sprites/enjoyments -----
+
+s1 = create_sprite("tree", 100, 100)
+s2 = create_sprite("Raven", -100, -100)
+s3 = create_sprite("golden_ratio_shell", -100, 100)
+s4 = create_sprite("rocket", 100, -100)
+s5 = create_sprite("red_squiggles", -160, 50)
+s6 = create_sprite("red_squiggles", 350, 50)
+
+# The writing -----
+
+message1 = create_sprite("alien",-60,200)
+message2 = create_sprite("alien",-130, -260   )
+message1.color("black")
 message1.write("Andy",font = ("Arial", 40, "normal"))
 message1.hideturtle()
-
+message2.color("black")
+message2.write("I like math.",font = ("Arial", 40, "normal"))
+message2.hideturtle()
 
 ######################################################################
 
