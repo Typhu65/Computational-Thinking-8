@@ -14,7 +14,7 @@ t.speed(10)
 
 
 t.pendown()
-colors = ["blue", "purple",  ]
+colors = ["red", "orange", "yellow" ]
 
 # First Circle
 
