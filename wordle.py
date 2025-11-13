@@ -1,10 +1,15 @@
 import random
 # Pick a word at random
-word_list = ["adder", "actor", "baron", "backs", "chick", "chalk", "demur", "drill", "enter", "exits", "fills", "ferns", "gates", "gapes", "hills", "halve", "iller", "icons" "jacks", "jeans", "kills", "karma", "lives", "livid", "minor", "macho", "newly", "nexus", "oasis", "oaken", "poppy", "pzazz", "query", "quirk", "right", "rings", "sings", "shins", "thigh", "thrum", "under", "usher", "victor", "vines", "wines", "wicks", "xerox", "xylol", "yacks", "yacht", "zippy", "zebra" ]
+word_list = ["adder", "actor", "baron", "backs", "chick", "chalk", "demur", "drill", "enter", "exits", "fills", "ferns", "gates", "gapes", "hills", "halve", "iller", "icons" "jacks", "jeans", "kills", "karma", "lives", "livid", "minor", "macho", "newly", "nexus", "oasis", "oaken", "poppy", "pzazz", "query", "quirk", "right", "rings", "sings", "shins", "thigh", "thrum", "under", "usher", "visit", "vines", "wines", "wicks", "xerox", "xylol", "yacks", "yacht", "zippy", "zebra" ]
+
+#word_list = []
+
+#with open("wordle.txt", "r") as file:
+#    the_file_content = file.read()
+#    word_list.extend(the_file_content.split("\n"))
+
 hidden_word = random.choice(word_list)
-
-print("WORDLE:")
-
+print("WORDLE! You have 6 guesses - good luck!")
 
 
 # Repeat for 6 guesses
@@ -52,7 +57,7 @@ for i in range(6):
             output += "🟨"
         elif guess_word[4] not in hidden_word:
             output += "⬛"
-        else: print("try again")
+        else: print("Try again.)")
         
             
 
@@ -63,9 +68,10 @@ for i in range(6):
         # Result
         print(output)
         if output == "🟩🟩🟩🟩🟩":
-            print("You win")
+            print("You win!")
             break
 
         print(f"You used {i+1} guesses")  
 
-else: print("Try again.")
+else: 
+    print("Try again next time. The word is {0}".format(hidden_word))
