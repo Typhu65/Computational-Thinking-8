@@ -4,6 +4,8 @@ def set_background(image_filename):
 	screen = turtle.Screen()
 	try:
 		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
+		try:
+			diddy.bgpic(f"/w
 	except:
 		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
 
