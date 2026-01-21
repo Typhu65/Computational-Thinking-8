@@ -4,8 +4,6 @@ def set_background(image_filename):
 	screen = turtle.Screen()
 	try:
 		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
-		try:
-			diddy.bgpic(f"/w
 	except:
 		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
 
@@ -82,6 +80,7 @@ message1.hideturtle()
 message2.color("black")
 message2.write("I like math.",font = ("Arial", 40, "normal"))
 message2.hideturtle()
+message4689780938487288300488380209891908
 
 ######################################################################
 
